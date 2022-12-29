@@ -1,5 +1,5 @@
 # springproject
-Spring boot project with CRUD operations for order service , with Mysql and JPA Hibernate
+Created spring boot application for order service with Database Mysql and Hibernate
 
 **How you can run**
 
