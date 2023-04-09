@@ -20,9 +20,7 @@ public class Order {
     private long orderId;
     private LocalDate orderDate;
     private String orderStatus;
-    @JsonManagedReference
-    @OneToMany (cascade = CascadeType.ALL)
-    @JoinColumn ( name = "order_fk")
+    @OneToMany (cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Item> items=new ArrayList<>();
 
 }

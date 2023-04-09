@@ -15,10 +15,6 @@ public class Item {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long itemId;
-    @JsonBackReference
-    @ManyToOne ( cascade = CascadeType.PERSIST)
-    @JoinColumn(name="order_fk" )
-    private Order order;
     private String itemName;
     private  Long itemUnitPrice;
     private Long itemQuantity;
